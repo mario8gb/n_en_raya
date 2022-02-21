@@ -37,7 +37,7 @@ public class Partida {
     private String leer_nombre(int id, String opcion) {
 
         String nombre;
-        if (opcion == "nombre") {
+        if ("nombre".equals(opcion)) {
             System.out.println("Hola jugador " + id + " ¿Como te llamas?");
         } else {
             System.out.println("¿Como te apellidas?");

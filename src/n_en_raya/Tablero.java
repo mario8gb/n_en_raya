@@ -135,7 +135,7 @@ public class Tablero {
 
     }
 
-    public int leer_coor(int jugador, String posicion, Jugador[] jugadores) {
+    private int leer_coor(int jugador, String posicion, Jugador[] jugadores) {
 
         int coor;
         do {
@@ -151,7 +151,7 @@ public class Tablero {
         return coor - 1;
     }
 
-    public void movimiento(int fila, int columna, int jugador, Jugador[] jugadores) {
+    private void movimiento(int fila, int columna, int jugador, Jugador[] jugadores) {
 
         if (tablero[fila][columna] != '-') {
             System.out.println("Esta posicion ya esta ocupada");
